@@ -24,7 +24,7 @@
  *                Constants
  *******************************************************/
 #define LED_PAPA 2
-#define PULSADOR_PIN 0
+#define PULSADOR_PIN 23
 #define RX_SIZE          (1500)
 #define TX_SIZE          (1460)
 #define CONFIG_MESH_ROUTER_SSID "EstelitaTwo"
@@ -47,7 +47,7 @@ static uint8_t rx_buf[RX_SIZE] = { 0, };
 static bool is_mesh_connected = false;
 static mesh_addr_t mesh_parent_addr;
 static int mesh_layer = -1;
-uint8_t contador=0;
+uint32_t contador=0;
 SemaphoreHandle_t semaforo = NULL;
 
 /*******************************************************
